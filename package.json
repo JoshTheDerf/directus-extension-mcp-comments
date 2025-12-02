@@ -1,0 +1,55 @@
+{
+	"name": "directus-extension-mcp-comments",
+	"description": "MCP tool for managing comments on Directus items",
+	"version": "1.0.0",
+	"author": {
+		"name": "Joshua Bemenderfer",
+		"email": "josh@thederf.com",
+		"url": "https://thederf.com"
+	},
+	"license": "MIT",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-extension-hook",
+		"mcp",
+		"model-context-protocol",
+		"comments",
+		"activity"
+	],
+	"icon": "comment",
+	"type": "module",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JoshTheDerf/directus-extension-mcp-comments.git"
+	},
+	"homepage": "https://thederf.com",
+	"bugs": {
+		"url": "https://github.com/JoshTheDerf/directus-extension-mcp-comments/issues"
+	},
+	"directus:extension": {
+		"type": "hook",
+		"path": "dist/index.js",
+		"source": "src/index.ts",
+		"host": "^10.10.0"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link",
+		"validate": "directus-extension validate",
+		"prepublishOnly": "npm run build"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "17.0.3",
+		"@types/node": "^24.10.1",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"zod": "^3.24.1"
+	}
+}
