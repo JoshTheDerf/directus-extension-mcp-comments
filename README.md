@@ -13,9 +13,17 @@ A Directus extension that adds a `comments` tool to the MCP (Model Context Proto
 
 ## Prerequisites
 
-This extension requires the `directus-extension-mcp-customization` extension to be installed and enabled.
+This extension requires the [`directus-extension-mcp-customization`](https://github.com/JoshTheDerf/directus-extension-mcp-customization) extension to be installed and enabled.
 
 ## Installation
+
+Install via npm:
+
+```bash
+npm install directus-extension-mcp-comments
+```
+
+Or manually:
 
 1. Install dependencies:
 ```bash
